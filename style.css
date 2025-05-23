@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/jason-lucia-caminos-3840x2160-22308.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+form, input, button {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: auto;
+  width: 300px;
+  background-color: rgba(119, 107, 107, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  gap: 15px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+input, textarea, select {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+::placeholder {
+  text-align: center;
+  color: #fff;
+}
+
+button {
+  background: #ff7f50;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  height: 100%;
+}
+
+button:hover {
+  background: #ff4500;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
