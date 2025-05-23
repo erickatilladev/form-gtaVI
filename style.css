@@ -7,7 +7,10 @@
 body {
   background-image: url(./assets/jason-lucia-caminos-3840x2160-22308.jpg);
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   min-height: 100vh;
+  overflow-x: hidden; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -26,7 +29,8 @@ form {
   flex-direction: column;
   border-radius: 20px;
   margin: auto;
-  width: 300px;
+  width: 90%;
+  max-width: 350px;
   background-color: rgba(119, 107, 107, 0.6);
   padding: 20px;
   border-radius: 10px;
@@ -37,9 +41,11 @@ form {
 h1 {
   color: white;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 input, textarea, select {
+  width: 100%;
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.5);
   color: #fff;
@@ -53,6 +59,7 @@ input, textarea, select {
 }
 
 button {
+  width: 100%;
   background: #ff7f50;
   border: none;
   padding: 10px 20px;
@@ -61,7 +68,6 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
-  height: 100%;
 }
 
 button:hover {
@@ -74,4 +80,20 @@ footer {
   text-align: center;
   font-size: 0.9em;
   letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(./assets/jason-lucia-caminos-1080x1920-22308.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  h1 {
+    font-size: 1.3rem;
+  }
+  
+  input, button {
+    font-size: 1rem;
+  }
 }
